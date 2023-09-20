@@ -1,0 +1,13 @@
+<%= javascript_include_tag 'calculadora' %>
+
+
+<div class="container_calculator">
+    <h1>Página de Calculadora</h1>
+    <p>Faça a soma de dois números</p>
+    <input id="num1" placeholder="Primeiro numero" type="text"/>
+    <input id="num2" placeholder="Segundo numero" type="text"/>
+    <button onclick="resultado()">Calcular</button>
+    <p id="showResult">0</p>
+</div>
+
+<script src="<%= asset_path 'calculadora.js' %>"></script>
